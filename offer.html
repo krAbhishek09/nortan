@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Heading and Image Page</title>
+    <script src="https://kit.fontawesome.com/4cbca90a22.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 100vh;
+            width: auto;
+            /* background: linear-gradient(white, cyan); */
+            background-color: #4158D0;
+            background-image: linear-gradient(white, cyan);
+
+            /* h: 100vh; */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            position: relative;
+
+        }
+
+        .content {
+            padding: 100px;
+            box-sizing: border-box;
+            text-align: center;
+            /* width:700px; */
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #333;
+            text-align: center;
+            color: #333333;
+
+        }
+
+        .para-content {
+            font-size: 16px;
+            color: #555;
+            /* margin-left: 200px; */
+            text-align: justify;
+            padding: 20px;
+
+        }
+
+        .image-container {
+            /* margin-top: ; */
+            height: 100vh;
+            /* width: 42%; */
+            /* margin-left: 200px; */
+            /* margin-bottom: 10%; */
+            /* padding-bottom: 400px; */
+
+
+        }
+
+        img {
+            max-width: 441px;
+            height: 436PX;
+            margin-top: 225px;
+            /* margin-bottom: 700px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Apple {
+            font-size: 30px;
+            /* margin-top: 70px; */
+            /* padding:0; */
+            padding: 20px;
+        }
+
+        .button {
+            padding: 6px;
+            width: 325px;
+            background: linear-gradient(Blue, aqua);
+            border-radius: 32px;
+            cursor: pointer;
+            font-weight: bolder;
+            font-size: 26px;
+            margin-left: 120px;
+            margin-left: 55px;
+        }
+
+        .click:hover {
+            transform: scale(1.1);
+        }
+
+        .list-item-1 {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            /* border: 2px solid black; */
+            margin-right: 10px;
+        }
+
+        .list-item-1 li {
+            margin-bottom: 7px;
+        }
+
+        .list-item-2 li {
+            margin-bottom: 7px;
+            /* border: 2px solid black; */
+        }
+
+        .icon {
+            display: flex;
+            margin: 10px;
+        }
+
+        .list-item-2 {
+            display: flex;
+            list-style: none;
+            /* border: 2px solid black; */
+            margin-left: 30px;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+        }
+
+        .content h1 {
+            font-size: 30px;
+        }
+
+        .list-item-1>li>i {
+            color: rgb(16, 16, 59);
+            width: auto;
+            height: 20px;
+            font-size: 20px;
+
+        }
+
+        .list-item-2>li>i {
+            color: rgb(16, 16, 59);
+            width: auto;
+            height: 20px;
+            font-size: 20px;
+        }
+
+        .offer-image img {
+            height: 245px;
+            width: 223px;
+            position: absolute;
+            bottom: 350px;
+            left: 41%;
+            top: -230px;
+        }
+
+        .form {
+            /* position: relative; */
+            /* bottom: 200px; */
+            display: none;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                height: 100%;
+            }
+
+            .content {
+                width: 100%;
+                padding: 20px;
+                margin-bottom: -140px;
+            }
+
+
+
+            .QrImage {
+                height: 200px;
+                margin-left: 173px !important;
+                margin-top: 52px;
+
+            }
+
+            .pay {
+                margin-left: 10px !important;
+            }
+
+            .image-container {
+                width: 100%;
+                margin-bottom: 0;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+                margin-top: 20px;
+            }
+
+            .offer-image img {
+                bottom: 200px;
+                display: none;
+            }
+
+            .button {
+                width: 100%;
+                margin-left: 6px;
+            }
+
+            .list-item-1,
+            .list-item-2 {
+                margin-left: 0;
+            }
+
+        }
+
+        .QrImage {
+            height: 200px;
+            margin-left: 200px;
+            margin-top: 52px;
+        }
+
+        .image-qr {
+            display: flex;
+            flex-direction: column;
+            gap: -20px;
+            margin-top: 150px;
+            margin-right: 10px;
+        }
+
+        .code {
+            margin-left: -82px;
+        }
+
+        .pay {
+            margin-left: 102px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="offer-image">
+            <!-- <img src="/assets/images/blog-image/Holi-PNG-Label-Design.png" alt=""> -->
+        </div>
+
+        <div class="content">
+            <h4 class="Apple"><i class="fa-brands fa-apple"></i> Apple</h4>
+            <h1>Buy iPhone 15 Pro<br>just <span style="font-size:50px; color:red;">Rs 99 </span>/-
+            </h1>
+            <p class="para-content">
+                A16 Bionic powers all kinds of advanced features. Like computational photography used for 24 MP photos
+                and next-gen portraits.</p>
+            <div class="icon">
+
+                <ul class="list-item-1">
+                    <li><i class="fa-solid fa-mobile"></i> D 17.00 cm</li>
+                    <li class="newicon"><i class="fa-solid fa-chalkboard-user"></i> <span>A17 Pro chip</span>
+                    </li>
+                    <li><i class="fa-solid fa-camera"></i> Dual Camera</li>
+                    <!-- <li><i class="fa-solid fa-camera" style="font-size: 20px;"></i> A17 Pro chip -->
+                    <!-- with 6-core GPU</li> -->
+                </ul>
+
+
+                <ul class="list-item-2">
+                    <li><i class="fa-solid fa-mobile"></i> 17.00 cm</li>
+                    <li><i class="fa-solid fa-chalkboard-user"></i> Pro chip</li>
+                    <li><i class="fa-solid fa-camera"></i> Dual Camera</li>
+                </ul>
+
+            </div>
+            <!-- <p class="para-content">ADVANCED DISPLAY — The 6.1” Super Retina XDR display with ProMotion ramps up refresh
+                rates to 120Hz when
+                you need exceptional graphics performance. Dynamic Island bubbles up alerts and Live Notifications.
+                Plus, with Always-On display, your Lock Screen stays glanceable, so you don’t have to tap it to stay in
+                the know..</p> -->
+
+        </div>
+        <div class="image-container">
+            <!-- Replace the URL with the actual image URL -->
+            <div class="image-qr">
+                <h1 class="pay">Scan & Pay</h1>
+                <div class="code">
+                    <img class="QrImage" src="assets/images/banner/Qrimage.jpeg" alt="Image">
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+<!-- <script>
+    let div = document.querySelectorAll(".form")[0]
+    console.log(div);
+    let button = document.querySelector(".button");
+
+    button.addEventListener("click", e => {
+          e.preventDefault();
+          div.style.display="block";
+    })
+</script> -->
+
+</html>

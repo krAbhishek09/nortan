@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share and Redirect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+#shareButton {
+    background-color: #25D366;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#referralCount {
+    margin-top: 20px;
+}
+
+</style>
+
+
+<body>
+    <div class="container">
+        <h1>Share this link with 10 people on WhatsApp:</h1>
+        <button id="shareButton">Share via WhatsApp</button>
+        <p id="referralCount">0 out of 10 people shared</p>
+    </div>
+
+    <script > 
+        // Initialize referral count
+let referralCount = 0;
+
+// Function to update referral count display
+function updateReferralCount() {
+    document.getElementById('referralCount').textContent = `${referralCount} out of 10 people shared`;
+}
+
+// Function to handle sharing via WhatsApp
+function shareViaWhatsApp() {
+    // Replace the URL with your own link
+    let url = encodeURIComponent('https://eatharva.com/switch/index1.html');
+
+    // Construct the WhatsApp share link with the URL
+    let whatsappLink = `https://api.whatsapp.com/send?text=Check out this link: ${url}`;
+
+    // Open the WhatsApp share link in a new tab
+    window.open(whatsappLink, '_blank');
+
+    // Increment referral count
+    referralCount++;
+    updateReferralCount();
+
+    // Check if user has shared with 5 people and redirect if so
+    if (referralCount >= 10) {
+        window.location.href = 'redirectPage.html'; // Redirect to another page
+    }
+}
+
+// Event listener for share button click
+document.getElementById('shareButton').addEventListener('click', shareViaWhatsApp);
+
+    </script>
+</body>
+</html>

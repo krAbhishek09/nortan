@@ -1,0 +1,2329 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartPhone-Home-Page</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Printer-Smart Product Ecommerce Website ">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <!-- CSS
+    ============================================ -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font.awesome.css" />
+    <link rel="stylesheet" href="assets/css/pe-icon-7-stroke.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/venobox.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Minify Version -->
+    <!-- <link rel="stylesheet" href="assets/css/plugins.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css"> -->
+    <script src="product.js"></script>
+    <style>
+        .hero-slide-image {
+            margin-top: -20pc;
+        }
+
+        .main-menu.position-relative {
+            background: #f58013;
+            width: 60%;
+            margin-left: 25%;
+            margin-top: -95px;
+        }
+    </style>
+    <!-- =========================================banner css start============================= -->
+    <style>
+        .carousel {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hero-slide-item {
+            height: 400px;
+        }
+
+        .title-1 {
+            font-size: 30px !important;
+        }
+
+        .hero-slide-image img {
+            /* margin-left: 150px !important; */
+            height: 300px;
+            width: auto;
+            /* margin-top: 50px; */
+        }
+
+        .carousel-slide {
+            display: none;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 400px;
+        }
+
+        .carousel-slide.active {
+            display: block;
+        }
+
+        .prev {
+            position: absolute;
+            top: 124rem;
+            left: 10px;
+            height: 60px;
+            width: 80px;
+            border-radius: 0px 30% 30% 0px;
+            background-color: rgba(226, 142, 31, 0.616);
+        }
+
+        .next {
+            position: absolute;
+            top: 124rem;
+            right: 10px;
+            height: 60px;
+            width: 80px;
+            border-radius: 30% 0px 0px 30%;
+            background-color: rgba(226, 142, 31, 0.616);
+        }
+
+        @media screen and (max-width:768px) {
+            .carousel-slide img {
+                height: 120px;
+            }
+
+            .pr_img {
+                height: 200px;
+            }
+
+            .title-1 {
+                font-size: 20px !important;
+            }
+
+            .hero-slide-image img {
+                margin-left: 150px !important;
+                height: 200px;
+                margin-top: 50px;
+            }
+
+            .btn-primary {
+                margin-top: 100px;
+            }
+
+            .category {
+                font-size: 10px !important;
+            }
+
+            .hero-slide-item {
+                height: 500px;
+            }
+
+            .title-1 {
+                line-height: 1.5 !important;
+            }
+
+        }
+
+        /* Cart list styles */
+       
+    </style>
+
+    <!-- ===================================================banner css end=========================== -->
+</head>
+
+<body>
+    <!-- <div class="cart">
+        <h2>Your Cart</h2>
+        <div id="cart"></div>
+    </div> -->
+    <div class="main-wrapper">
+        <header>
+            <!-- Header top area start -->
+            <div class="header-top">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col">
+                            <!-- <div class="welcome-text">
+                                <p>World Wide Completely Free Returns and Shipping</p>
+                            </div> -->
+                        </div>
+                        <div class="col d-none d-lg-block">
+                            <div class="top-nav"> <br>
+                                <!-- <ul>
+                                    <li><a href="mailto:info@ecommerce.com"><i class="fa fa-envelope-o"></i>
+                                            info@ecommerce.com</a></li>
+                                    <li><a href="my-account.html"><i class="fa fa-user"></i> Account</a></li>
+                                </ul> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Header top area end -->
+            <!-- Header action area start -->
+            <div class="header-bottom  d-none d-lg-block">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-lg-3 col">
+                            <div class="header-logo">
+                                <a href="index.html"><img src="/assets/images/logo/Atharva-removebg-preview.png"
+                                        alt="Site Logo" /></a>
+                            </div>
+                        </div>
+                        <!-- <div class="col-lg-6 d-none d-lg-block">
+                            <div class="search-element">
+                                <form action="#">
+                                    <input type="text" placeholder="Search" />
+                                    <button><i class="pe-7s-search"></i></button>
+                                </form>
+                            </div>
+                        </div> -->
+                        <div class="col-lg-3 col">
+                            <div class="header-actions">
+                                <!-- Single Wedge Start -->
+                                <a href="#offcanvas-wishlist" class="header-action-btn offcanvas-toggle">
+                                    <i class="pe-7s-like"></i>
+                                </a>
+                                <!-- Single Wedge End -->
+                                <a href="#offcanvas-cart"
+                                    class="header-action-btn header-action-btn-cart offcanvas-toggle pr-0">
+                                    <i class="pe-7s-shopbag"></i>
+                                    <!-- <span class="header-action-num">01</span> -->
+                                    <!-- <span class="cart-amount">€30.00</span> -->
+                                </a>
+                                <a href="#offcanvas-mobile-menu"
+                                    class="header-action-btn header-action-btn-menu offcanvas-toggle d-lg-none">
+                                    <i class="pe-7s-menu"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Header action area end -->
+            <!-- Header action area start -->
+            <div class="header-bottom d-lg-none sticky-nav style-1">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-lg-3 col">
+                            <div class="header-logo">
+                                <a href="index.html"><img class="mob_logo"
+                                        src="/assets/images/logo/Atharva-removebg-preview.png" alt="logo" /></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-none d-lg-block">
+                            <!-- <div class="search-element">
+                                <form action="#">
+                                    <input type="text" placeholder="Search" />
+                                    <button><i class="pe-7s-search"></i></button>
+                                </form>
+                            </div> -->
+                        </div>
+                        <div class="col-lg-3 col">
+                            <div class="header-actions">
+                                <!-- Single Wedge Start -->
+                                <a href="#offcanvas-wishlist" class="header-action-btn offcanvas-toggle">
+                                    <i class="pe-7s-like"></i>
+                                </a>
+                                <!-- Single Wedge End -->
+                                <a href="#offcanvas-cart"
+                                    class="header-action-btn header-action-btn-cart offcanvas-toggle pr-0">
+                                    <i class="pe-7s-shopbag"></i>
+                                    <!-- <span class="header-action-num">01</span> -->
+                                    <!-- <span class="cart-amount">€30.00</span> -->
+                                </a>
+                                <a href="#offcanvas-mobile-menu"
+                                    class="header-action-btn header-action-btn-menu offcanvas-toggle d-lg-none">
+                                    <i class="pe-7s-menu"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Header action area end -->
+            <!-- header navigation area start -->
+            <div class="header-nav-area d-none d-lg-block sticky-nav">
+                <div class="container">
+                    <div class="header-nav">
+                        <div class="main-menu position-relative">
+                            <ul>
+                                <li class="dropdown"><a href="index.html">Home</a>
+                                </li>
+                                <li><a href="about.html">About</a></li>
+
+
+
+                                <li class="dropdown position-static"><a href="shop-left-sidebar-1.html">Shop</a>
+                                    <!-- <ul class="mega-menu d-block">
+                                        <li class="d-flex">
+                                            <ul class="d-block">
+                                                <li class="title"><a href="#">Shop Page</a></li>
+                                                <li><a href="shop-left-sidebar.html">Shop Left Sidebar</a></li>
+                                            </ul>
+                                            <ul class="d-block">
+                                                <li class="title"><a href="#">product Details Page</a></li>
+                                                <li><a href="single-product.html">Product Single</a></li>
+                                            </ul>
+                                            <ul class="d-block">
+                                                <li class="title"><a href="#">Single Product Page</a></li>
+                                                <li><a href="cart.html">Cart Page</a></li>
+                                            </ul>
+                                            <ul class="d-block p-0 border-0">
+                                                <li class="title"><a href="#">Single Product Page</a></li>
+                                                <li><a href="checkout.html">Checkout Page</a></li>
+                                                <li><a href="wishlist.html">Wishlist Page</a></li>
+                                                <li><a href="my-account.html">Account Page</a></li>
+                                                <li><a href="login.html">Login & Register Page</a></li>
+                                                <li><a href="order-tracking.html">Order Tracking</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul> -->
+
+
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li class="dropdown"><a href="switch/index1.html">Offer</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header navigation area end -->
+            <div class="mobile-search-box d-lg-none">
+                <div class="container">
+                    <!-- mobile search start -->
+                    <!-- <div class="search-element max-width-100">
+                        <form action="#">
+                            <input type="text" placeholder="Search" />
+                            <button><i class="pe-7s-search"></i></button>
+                        </form>
+                    </div> -->
+                    <!-- mobile search start -->
+                </div>
+            </div>
+        </header>
+        <!-- offcanvas overlay start -->
+        <div class="offcanvas-overlay"></div>
+        <!-- offcanvas overlay end -->
+        <!-- OffCanvas Wishlist Start -->
+        <div id="offcanvas-wishlist" class="offcanvas offcanvas-wishlist">
+            <div class="inner">
+                <div class="head">
+                    <span class="title">Wishlist</span>
+                    <button class="offcanvas-close">×</button>
+                </div>
+                <div class="body customScroll">
+                    <ul class="minicart-product-list">
+                        <li>
+                            <!-- <a href="single-product.html" class="image"><img src="assets/images/new/1.png"
+                                    alt="Cart product Image"></a>
+                            <div class="content">
+                                <a href="single-product.html" class="title">HP Laserjet M126a B&W Printer</a>
+                                <span class="quantity-price">1 x <span class="amount">$223.22</span></span>
+                                <a href="#" class="remove">×</a>
+                            </div> -->
+
+                        </li>
+
+                        <li>
+                            <!-- <a href="single-product.html" class="image"><img src="assets/images/new/2.png"
+                                    alt="Cart product Image"></a>
+                            <div class="content">
+                                <a href="single-product.html" class="title"> Smart Tank 670 All-in-One Printer</a>
+                                <span class="quantity-price">1 x <span class="amount">$210.02</span></span>
+                                <a href="#" class="remove">×</a>
+                            </div> -->
+                        </li>
+                        <li>
+                            <!-- <a href="single-product.html" class="image"><img src="assets/images/new/4.png"
+                                    alt="Cart product Image"></a>
+                            <div class="content">
+                                <a href="single-product.html" class="title">Smart Music Box</a>
+                                <span class="quantity-price">1 x <span class="amount">$17.34</span></span>
+                                <a href="#" class="remove">×</a>
+                            </div> -->
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot">
+                    <div class="buttons">
+                        <a href="wishlist.html" class="btn btn-dark btn-hover-primary mt-30px">view wishlist</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- OffCanvas Wishlist End -->
+        <!-- OffCanvas Cart Start -->
+        <div id="offcanvas-cart" class="offcanvas offcanvas-cart">
+            <div class="inner">
+                <div class="head">
+                    <span class="title">Cart</span>
+                    <button class="offcanvas-close">×</button>
+                </div>
+
+
+                <!-- <div class="total">0.0</div> -->
+
+                <div class="body customScroll">
+                    <ul class="minicart-product-list">
+                        <li class="li">
+                            <!-- <a href="single-product.html" class="image"><img src="assets/images/new/1.png"
+                                    alt="Cart product Image"></a>
+                            <div class="content">
+                                <a href="single-product.html" class="title">Modern Smart Phone</a>
+                                <span class="quantity-price">1 x <span class="amount">$18.86</span></span>
+                                <a href="#" class="remove">×</a>
+                            </div> -->
+                            <div class="cart">
+                                <div id="cart"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- <a href="single-product.html" class="image"><img src="assets/images/new/2.png"
+                                    alt="Cart product Image"></a>
+                            <div class="content">
+                                <a href="single-product.html" class="title">Bluetooth Headphone</a>
+                                <span class="quantity-price">1 x <span class="amount">$43.28</span></span>
+                                <a href="#" class="remove">×</a>
+                            </div> -->
+                        </li>
+                        <li>
+                            <!-- <a href="single-product.html" class="image"><img src="assets/images/new/4.png"
+                                    alt="Cart product Image"></a>
+                            <div class="content">
+                                <a href="single-product.html" class="title">Smart Music Box</a>
+                                <span class="quantity-price">1 x <span class="amount">$37.34</span></span>
+                                <a href="#" class="remove">×</a>
+                            </div> -->
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot">
+                    <div class="buttons mt-30px">
+                        <a href="cart.html" class="btn btn-dark btn-hover-primary mb-30px">view cart</a>
+                        <a href="checkout.html" class="btn btn-outline-dark current-btn">checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- OffCanvas Cart End -->
+        <!-- OffCanvas Menu Start -->
+        <div id="offcanvas-mobile-menu" class="offcanvas offcanvas-mobile-menu">
+            <button class="offcanvas-close"></button>
+            <!-- <div class="user-panel">
+                <ul>
+
+                    <li><a href="mailto:info@ecommerce.com"><i class="fa fa-envelope-o"></i>
+                            info@ecommerce.com</a></li>
+                    <li><a href="my-account.html"><i class="fa fa-user"></i> Account</a></li>
+                </ul>
+            </div> -->
+            <div class="inner customScroll">
+                <div class="offcanvas-menu mb-4">
+                    <ul>
+                        <li><a href="index.html"><span class="menu-text">Home</span></a>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="shop-left-sidebar-1.html"><span class="menu-text">Shop</span></a>
+                        <li><a href="switch/index1.html"><span class="menu-text">Offer</span></a>
+                        <li><a href="about.html">About</a></li>
+                        <!-- <ul class="sub-menu">
+                                <li>
+                                    <a href="shop-left-sidebar-1.html"><span class="menu-text">Shop Page</span></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="shop-left-sidebar-1.html">Shop Left Sidebar</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="shop-left-sidebar-1.html"><span class="menu-text">product Details Page</span></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="shop-left-sidebar-1.html">Product Single</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="menu-text">Single Product Page</span></a>
+                                    <ul class="sub-menu">
+
+                                        <li><a href="cart.html">Cart Page</a></li>
+                                        <li><a href="wishlist.html">Wishlist Page</a></li>
+                                        <li><a href="my-account.html">Account Page</a></li>
+                                        <li><a href="login.html">Login & Register Page</a></li>
+                                    </ul>
+                                </li>
+                            </ul> -->
+                        </li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- OffCanvas Menu End -->
+                <!-- <div class="offcanvas-social mt-auto">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-google"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+        <!-- OffCanvas Menu End -->
+        <!-- Hero/Intro Slider Start -->
+        <div class="section ">
+            <div class="hero-slider swiper-container slider-nav-style-1 slider-dot-style-1">
+                <!-- Hero slider Active -->
+                <div class="swiper-wrapper">
+                    <!-- Single slider item -->
+                    <div class="hero-slide-item slider-height swiper-slide bg-color1">
+                        <div class="container h-100">
+                            <div class="row h-100">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 align-self-center sm-center-view">
+                                    <div class="hero-slide-content slider-animated-1">
+                                        <span class="category">Welcome to our SmartPhone Collection</span>
+                                        <h2 class="title-1">Empowering connections, one touch at a time. your
+                                            world with our smartphone. </h2>
+                                        <a href="shop-left-sidebar-1.html" class="btn btn-primary text-capitalize">Shop
+                                            All</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex justify-content-center position-relative align-items-end">
+                                    <div class="show-case">
+                                        <div class="hero-slide-image">
+                                            <img src="../assets/images/iphone/appleOffer.png" height="200px" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single slider item -->
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination-white"></div>
+            <!-- Add Arrows -->
+            <!-- <div class="swiper-buttons">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div> -->
+        </div>
+    </div>
+    <!-- Hero/Intro Slider End -->
+    <!-- Banner Area Start -->
+
+
+
+
+
+    <!-- Banner Area End -->
+    <!-- Product Area Start -->
+    <div class="product-area pb-100px">
+        <div class="container">
+            <!-- Section Title & Tab Start -->
+            <div class="row">
+                <div class="col-12">
+                    <!-- Tab Start -->
+                    <div class="tab-slider d-md-flex justify-content-md-between align-items-md-center">
+                        <ul class="product-tab-nav nav justify-content-start align-items-center">
+                            <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab"
+                                    data-bs-target="#newarrivals">New Arrivals</button>
+                            </li>
+                            <li class="nav-item"><button class="nav-link " data-bs-toggle="tab"
+                                    data-bs-target="#toprated">Top Rated</button>
+                            </li>
+                            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab"
+                                    data-bs-target="#featured">Featured</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Tab End -->
+                </div>
+            </div>
+            <!-- Section Title & Tab End -->
+            <div class="row">
+                <div class="col">
+                    <div class="tab-content mt-60px">
+                        <!-- 1st tab start -->
+                        <div class="tab-pane fade show active" id="newarrivals">
+                            <div class="row mb-n-30px">
+                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
+                                    <!-- Single Prodect -->
+                                    <div class="product">
+                                        <span class="badges">
+                                            <span class="new">New</span>
+                                        </span>
+                                        <div class="thumb">
+                                            <a href="/Single Product/Redmi-Note-11pro.html" class="image">
+                                                <img src="/assets/images/Redmi/Redmi-Note_11Pro.jpg" alt="Product" />
+                                                <img class="hover-image" src="assets/images/Redmi/Redmi-Note_11Pro.jpg"
+                                                    alt="Product" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <span class="category"><a
+                                                    href="/Single Product/Redmi-Note-11pro.html">Brand:REDMI</a></span>
+                                            <h5 class="title"><a href="/Single Product/Redmi-Note-11pro.html">
+                                                    Redmi Note 11 Pro + 5G
+                                                </a>
+                                            </h5>
+                                            <span class="price">
+                                                <span class="new">₹15,150
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="actions">
+
+                                            <!-- cart action -->
+                                            <button
+                                                onclick="addToCart('Redmi Note 11 Pro + 5G', '₹15,150', '/assets/images/Redmi/Redmi-Note_11Pro.jpg')"
+                                                title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Cart"><i
+                                                    class="pe-7s-shopbag"></i></button>
+                                            <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Wishlist"><i
+                                                    class="pe-7s-like"></i></button>
+                                            <button class="action quickview" data-link-action="quickview"
+                                                title="Quick view" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i class="pe-7s-look"></i></button>
+                                            <button class="action compare" title="Compare" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Compare"><i
+                                                    class="pe-7s-refresh-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
+                                    <!-- Single Prodect -->
+                                    <div class="product">
+                                        <span class="badges">
+                                            <span class="sale">-10%</span>
+                                            <span class="new">New</span>
+                                        </span>
+                                        <div class="thumb">
+                                            <a href="/Single Product/iphone-15-proMax.html" class="image">
+                                                <img src="/assets/images/iphone/iphone-15-proMax.jpg" alt="Product" />
+                                                <img class="hover-image"
+                                                    src="/assets/images/iphone/iphone-15-proMax.jpg" alt="Product" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <span class="category"><a href="#">Brand:Iphone</a></span>
+                                            <h5 class="title"><a href="/Single Product/iphone-15-proMax.html">Apple
+                                                    iPhone 15 Pro Max (256 GB)
+
+                                                </a>
+                                            </h5>
+                                            <span class="price">
+                                                <span class="old">₹1,75,900</span>
+                                                <span class="new">₹1,48,900</span>
+                                            </span>
+                                        </div>
+                                        <div class="actions">
+                                            <button title="Add To Cart" class="action add-to-cart"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                    class="pe-7s-shopbag"></i></button>
+                                            <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Wishlist"><i
+                                                    class="pe-7s-like"></i></button>
+                                            <button class="action quickview" data-link-action="quickview"
+                                                title="Quick view" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i class="pe-7s-look"></i></button>
+                                            <button class="action compare" title="Compare" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Compare"><i
+                                                    class="pe-7s-refresh-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
+                                    <!-- Single Prodect -->
+                                    <div class="product">
+                                        <span class="badges">
+                                            <span class="new">Sale</span>
+                                        </span>
+                                        <div class="thumb">
+                                            <a href="/Single Product/Oppo-N2-flip.html" class="image">
+                                                <img src="/assets/images/oppo/oppo-N2flip.jpg" alt="Product" />
+                                                <img class="hover-image" src="/assets/images/oppo/oppo-N2flip.jpg"
+                                                    alt="Product" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <span class="category"><a href="/Single Product/Oppo-N2-flip.html"></a>
+                                                Brand:OPPO </a></span>
+                                            <h5 class="title"><a href="/Single Product/Oppo-N2-flip.html">Oppo n2 flip
+                                                </a>
+                                            </h5>
+                                            <span class="price">
+                                                <span class="new">
+                                                    ₹59,488
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="actions">
+                                            <button
+                                                onclick="addToCart('Oppo n2 flip', ' ₹59,488', '/assets/images/oppo/oppo-N2flip.jpg')"
+                                                title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Cart"><i
+                                                    class="pe-7s-shopbag"></i></button>
+                                            <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Wishlist"><i
+                                                    class="pe-7s-like"></i></button>
+                                            <button class="action quickview" data-link-action="quickview"
+                                                title="Quick view" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i class="pe-7s-look"></i></button>
+                                            <button class="action compare" title="Compare" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Compare"><i
+                                                    class="pe-7s-refresh-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
+                                    <!-- Single Prodect -->
+                                    <div class="product">
+                                        <span class="badges">
+                                            <span class="new">New</span>
+                                        </span>
+                                        <div class="thumb">
+                                            <a href="/Single Product/Samsung Galaxy S21 FE 5G.html"
+                                                style="height: 235px;" class="image">
+                                                <img src="/assets/images/samsung/sam-galaxy-S21FE.jpg" alt="Product" />
+                                                <img class="hover-image"
+                                                    src="/assets/images/samsung/sam-galaxy-S21FE.jpg" alt="Product" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <span class="category"><a
+                                                    href="/Single Product/Samsung Galaxy S21 FE 5G.html">Brand:Samsung</a></span>
+                                            <h5 class="title"><a href="/Single Product/Samsung Galaxy S21 FE 5G.html">
+                                                    Samsung Galaxy S21 FE 5G
+                                                </a>
+                                            </h5>
+                                            <span class="price">
+                                                <span class="new"> ₹33,890 </span>
+                                            </span>
+                                        </div>
+                                        <div class="actions">
+                                            <button
+                                                onclick="addToCart('  Samsung Galaxy S21 FE 5G', ' ₹33,890 ', '/assets/images/samsung/sam-galaxy-S21FE.jpg')"
+                                                title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Cart"><i
+                                                    class="pe-7s-shopbag"></i></button>
+                                            <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Wishlist"><i
+                                                    class="pe-7s-like"></i></button>
+                                            <button class="action quickview" data-link-action="quickview"
+                                                title="Quick view" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i class="pe-7s-look"></i></button>
+                                            <button class="action compare" title="Compare" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Compare"><i
+                                                    class="pe-7s-refresh-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
+                                    <!-- Single Prodect -->
+                                    <div class="product">
+                                        <span class="badges">
+                                        </span>
+                                        <div class="thumb">
+                                            <a href="Single Product/samsung-zfold4.html" class="image">
+                                                <img src="/assets/images/samsung/sam-galaxy-Zfold4.jpg" alt="Product" />
+                                                <img class="hover-image"
+                                                    src="/assets/images/samsung/sam-galaxy-Zfold4.jpg" alt="Product" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <span class="category"><a href="#">Brand:Xiaomi</a></span>
+                                            <h5 class="title"><a href="">
+                                                    realme narzo 60 5G (Cosmic Black,8GB+128GB)
+                                                </a>
+                                            </h5>
+                                            <span class="price">
+                                                <span class="new">₹14,999
+
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="actions">
+                                            <button
+                                                onclick="addToCart('realme narzo 60', '₹14,999 ', '/assets/images/samsung/sam-galaxy-Zfold4.jpg')"
+                                                title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Cart"><i
+                                                    class="pe-7s-shopbag"></i></button>
+                                            <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Wishlist"><i
+                                                    class="pe-7s-like"></i></button>
+                                            <button class="action quickview" data-link-action="quickview"
+                                                title="Quick view" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i class="pe-7s-look"></i></button>
+                                            <button class="action compare" title="Compare" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Compare"><i
+                                                    class="pe-7s-refresh-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
+                                    <!-- Single Prodect -->
+                                    <div class="product">
+                                        <span class="badges">
+                                            <span class="sale">-8%</span>
+                                            <span class="new">Sale</span>
+                                        </span>
+                                        <div class="thumb">
+                                            <a href="Single Product/iphone-14plus.html" class="image">
+                                                <img src="/assets/images/iphone/iphone-14Plus.jpg" alt="Product" />
+                                                <img class="hover-image" src="/assets/images/iphone/iphone-14Plus.jpg"
+                                                    alt="Product" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <span class="category"><a href="#">Brand:Apple</a></span>
+                                            <h5 class="title"><a href="Single Product/iphone-14plus.html">Apple iPhone
+                                                    14 Plus (512
+                                                    GB) - Blue
+                                                </a>
+                                            </h5>
+                                            <span class="price">
+                                                <span class="old">₹99,900</span>
+                                                <span class="new">₹90,909</span>
+
+                                            </span>
+                                        </div>
+                                        <div class="actions">
+                                            <button
+                                                onclick="addToCart('realme narzo 60', '₹14,999 ', '/assets/images/samsung/sam-galaxy-Zfold4.jpg')"
+                                                title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Cart"><i
+                                                    class="pe-7s-shopbag"></i></button>
+                                            <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Wishlist"><i
+                                                    class="pe-7s-like"></i></button>
+                                            <button class="action quickview" data-link-action="quickview"
+                                                title="Quick view" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i class="pe-7s-look"></i></button>
+                                            <button class="action compare" title="Compare" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Compare"><i
+                                                    class="pe-7s-refresh-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
+                                    <!-- Single Prodect -->
+                                    <div class="product">
+                                        <span class="badges">
+                                            <span class="new">Sale</span>
+                                        </span>
+                                        <div class="thumb">
+                                            <a href="Single Product/sam-galaxy-s23Ultra.html" style="height: 237px;"
+                                                class="image">
+                                                <img src="/assets/images/samsung/Sam-galaxy-S23-Ultra.jpg"
+                                                    alt="Product" />
+                                                <img class="hover-image"
+                                                    src="/assets/images/samsung/Sam-galaxy-S23-Ultra.jpg"
+                                                    alt="Product" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <span class="category"><a href="#">Brand: Samsung</a></span>
+                                            <h5 class="title"><a href="single-product.html">
+                                                    Samsung Galaxy S23 Ultra 5G
+                                                </a>
+                                            </h5>
+                                            <span class="price">
+                                                <span class="new">₹1,30,999
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="actions">
+                                            <button title="Add To Cart" class="action add-to-cart"
+                                                onclick="addToCart(' Samsung Galaxy S23', '₹1,30,999 ', '/assets/images/samsung/Sam-galaxy-S23-Ultra.jpg')"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                    class="pe-7s-shopbag"></i></button>
+                                            <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Wishlist"><i
+                                                    class="pe-7s-like"></i></button>
+                                            <button class="action quickview" data-link-action="quickview"
+                                                title="Quick view" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i class="pe-7s-look"></i></button>
+                                            <button class="action compare" title="Compare" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Compare"><i
+                                                    class="pe-7s-refresh-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
+                                    <!-- Single Prodect -->
+                                    <div class="product">
+                                        <span class="badges">
+                                            <span class="sale">-5%</span>
+                                        </span>
+                                        <div class="thumb">
+                                            <a href="Single Product/iphone-13.html" class="image">
+                                                <img src="/assets/images/iphone/iphone-13.jpg" alt="Product" />
+                                                <img class="hover-image" src="/assets/images/iphone/iphone-13.jpg"
+                                                    alt="Product" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <span class="category"><a
+                                                    href="Single Product/iphone-13.html">Brand:Apple</a></span>
+                                            <h5 class="title"><a href="Single Product/iphone-13.html">Apple iPhone 13
+                                                    (256 GB) -
+                                                    Black
+                                                </a>
+                                            </h5>
+                                            <span class="price">
+                                                <span class="old"> ₹69,900</span>
+                                                <span class="new"> ₹66,405</span>
+                                            </span>
+                                        </div>
+                                        <div class="actions">
+                                            <button title="Add To Cart" class="action add-to-cart"
+                                                onclick="addToCart('Apple iPhone 13', ' ₹66,405 ', '/assets/images/iphone/iphone-13.jpg')"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                    class="pe-7s-shopbag"></i></button>
+                                            <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Wishlist"><i
+                                                    class="pe-7s-like"></i></button>
+                                            <button class="action quickview" data-link-action="quickview"
+                                                title="Quick view" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i class="pe-7s-look"></i></button>
+                                            <button class="action compare" title="Compare" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Compare"><i
+                                                    class="pe-7s-refresh-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 1st tab end -->
+                        <!-- 2nd tab start -->
+                        <div class="tab-pane fade" id="toprated">
+                            <div class="row">
+                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
+                                    <!-- Single Prodect -->
+                                    <div class="product">
+                                        <span class="badges">
+                                            <span class="sale">-5%</span>
+                                        </span>
+                                        <div class="thumb">
+                                            <a href="Single Product/iphone-13.html" class="image">
+                                                <img src="/assets/images/iphone/iphone-13-1.jpg" alt="Product" />
+                                                <img class="hover-image" src="/assets/images/iphone/iphone-13-1.jpg"
+                                                    alt="Product" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <span class="category"><a href="#">Brand: APPLE</a></span>
+                                            <h5 class="title"><a href="Single Product/iphone-13.html">iphone 13
+
+                                                </a>
+                                            </h5>
+                                            <span class="price">
+                                                <!-- <span class="old">₹52,999</span> -->
+                                                <span class="new">₹52,999</span>
+                                            </span>
+                                        </div>
+                                        <div class="actions">
+                                            <button title="Add To Cart" class="action add-to-cart"
+                                                onclick="addToCart('Apple iPhone 13', ' ₹52,999 ', '/assets/images/iphone/iphone-13-1.jpg')"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                    class="pe-7s-shopbag"></i></button>
+                                            <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Wishlist"><i
+                                                    class="pe-7s-like"></i></button>
+                                            <button class="action quickview" data-link-action="quickview"
+                                                title="Quick view" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i class="pe-7s-look"></i></button>
+                                            <button class="action compare" title="Compare" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Compare"><i
+                                                    class="pe-7s-refresh-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
+                                    <!-- Single Prodect -->
+                                    <div class="product">
+                                        <span class="badges">
+                                            <span class="new">Sale</span>
+                                        </span>
+                                        <div class="thumb">
+                                            <a href="Single Product/iphone-15.html" class="image">
+                                                <img src="/assets/images/iphone/iphone-15-1.jpg" style="height: 257px;"
+                                                    alt="Product" />
+                                                <img class="hover-image" src="assets/images/iphone/iphone-15-1.jpg"
+                                                    style="height: 257px;" alt="Product" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <span class="category"><a href="#">Brand: APPLE</a></span>
+                                            <h5 class="title"><a href="Single Product/iphone-15.html">Iphone 15
+                                                </a>
+                                            </h5>
+                                            <span class="price">
+                                                <span class="new">₹72,999</span>
+                                            </span>
+                                        </div>
+                                        <div class="actions">
+                                            <button title="Add To Cart" class="action add-to-cart"
+                                                onclick="addToCart('Iphone 15', ' ₹72,9999 ', 'assets/images/iphone/iphone-15-1.jpg')"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                    class="pe-7s-shopbag"></i></button>
+                                            <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Wishlist"><i
+                                                    class="pe-7s-like"></i></button>
+                                            <button class="action quickview" data-link-action="quickview"
+                                                title="Quick view" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i class="pe-7s-look"></i></button>
+                                            <button class="action compare" title="Compare" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Compare"><i
+                                                    class="pe-7s-refresh-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
+                                    <!-- Single Prodect -->
+                                    <div class="product">
+                                        <span class="badges">
+                                            <span class="sale">-8%</span>
+                                            <span class="new">Sale</span>
+                                        </span>
+                                        <div class="thumb">
+                                            <a href="./assets/images/samsung/sam-galaxy-S21FE.jpg"
+                                                style="height: 235px;" class="image">
+                                                <img src="./assets/images/samsung/sam-galaxy-S21FE.jpg"
+                                                    style="height: 235px;" alt="Product" />
+                                                <img class="hover-image"
+                                                    src="./assets/images/samsung/sam-galaxy-S21FE.jpg"
+                                                    style="height: 235px;" alt="Product" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <span class="category"><a href="#">Brand: SAMSUNG</a></span>
+                                            <h5 class="title"><a href="single-product.html">samsung sam-galaxy-S21FE
+                                                    Printer
+                                                </a>
+                                            </h5>
+                                            <span class="price">
+                                                <!-- <span class="old">$93.83</span> -->
+                                                <span class="new">₹30,790</span>
+                                            </span>
+                                        </div>
+                                        <div class="actions">
+                                            <button title="Add To Cart" class="action add-to-cart"
+                                                onclick="addToCart('samsung sam-galaxy-S21FE', ' ₹30,790', './assets/images/samsung/sam-galaxy-S21FE.jpg')"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                    class="pe-7s-shopbag"></i></button>
+                                            <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Wishlist"><i
+                                                    class="pe-7s-like"></i></button>
+                                            <button class="action quickview" data-link-action="quickview"
+                                                title="Quick view" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i class="pe-7s-look"></i></button>
+                                            <button class="action compare" title="Compare" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Compare"><i
+                                                    class="pe-7s-refresh-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
+                                    <!-- Single Prodect -->
+                                    <div class="product">
+                                        <span class="badges">
+                                        </span>
+                                        <div class="thumb">
+                                            <a href="./Single Product/Oppo-N2-flip.html" style="height: 254px;"
+                                                class="image">
+                                                <img src="assets/images/oppo/Oppo-N2-flip-1.webp" style="padding: 20px;"
+                                                    alt="Product" />
+                                                <img class="hover-image" style="padding: 20px;"
+                                                    src="assets/images/oppo/Oppo-N2-flip-1.webp" alt="Product" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <span class="category"><a href="#">Brand: OPPO</a></span>
+                                            <h5 class="title"><a href="./Single Product/Oppo-N2-flip.html">OPPO n2 flip
+                                                </a>
+                                            </h5>
+                                            <span class="price">
+                                                <span class="new">₹74,990</span>
+                                            </span>
+                                        </div>
+                                        <div class="actions">
+                                            <button title="Add To Cart" class="action add-to-cart"
+                                                onclick="addToCart('OPPO n2 flip', '₹74,990', 'assets/images/oppo/Oppo-N2-flip-1.webp')"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                    class="pe-7s-shopbag"></i></button>
+                                            <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Wishlist"><i
+                                                    class="pe-7s-like"></i></button>
+                                            <button class="action quickview" data-link-action="quickview"
+                                                title="Quick view" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i class="pe-7s-look"></i></button>
+                                            <button class="action compare" title="Compare" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Compare"><i
+                                                    class="pe-7s-refresh-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
+                                    <!-- Single Prodect -->
+                                    <div class="product">
+                                        <span class="badges">
+                                            <span class="new">New</span>
+                                        </span>
+                                        <div class="thumb">
+                                            <a href="Single Product/vivo-x-100-pro.html" class="image">
+                                                <img src="assets/images/vivo/vivo-x-100-pro-2.webp" alt="Product" />
+                                                <img class="hover-image" src="assets/images/vivo/vivo-x-100-pro-2.webp"
+                                                    alt="Product" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <span class="category"><a href="#">Brand: VIVO </a></span>
+                                            <h5 class="title"><a href="Single Product/vivo-x-100-pro.html">VIVO X-100
+                                                </a>
+                                            </h5>
+                                            <span class="price">
+                                                <span class="new">₹69,999.00</span>
+                                            </span>
+                                        </div>
+                                        <div class="actions">
+                                            <button title="Add To Cart" class="action add-to-cart"
+                                                onclick="addToCart('OPPO n2 flip', '₹74,990', 'assets/images/oppo/Oppo-N2-flip-1.webp')"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                    class="pe-7s-shopbag"></i></button>
+                                            <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Wishlist"><i
+                                                    class="pe-7s-like"></i></button>
+                                            <button class="action quickview" data-link-action="quickview"
+                                                title="Quick view" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i class="pe-7s-look"></i></button>
+                                            <button class="action compare" title="Compare" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Compare"><i
+                                                    class="pe-7s-refresh-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
+                                    <!-- Single Prodect -->
+                                    <div class="product">
+                                        <span class="badges">
+                                            <span class="new">Sale</span>
+                                        </span>
+                                        <div class="thumb">
+                                            <a href="Single Product/Oppo-Reno-8.html" style="height: 257px;"
+                                                class="image">
+                                                <img src="assets/images/oppo/oppo-Reno-8.jpg" style="margin-left: 50px;"
+                                                    alt="Product" />
+                                                <img class="hover-image" src="assets/images/oppo/oppo-Reno-8.jpg"
+                                                    style="margin-left: 20px; padding: 20px;" alt="Product" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <span class="category"><a href="#">Brand: Oppo reno 8</a></span>
+                                            <h5 class="title"><a href="Single Product/Oppo-Reno-8.html">Oppo reno 8
+                                                </a>
+                                            </h5>
+                                            <span class="price">
+                                                <span class="new">₹38,999</span>
+                                            </span>
+                                        </div>
+                                        <div class="actions">
+                                            <button title="Add To Cart" class="action add-to-cart"
+                                                onclick="addToCart('Oppo reno 8', '₹38,999', 'assets/images/oppo/Oppo-N2-flip-1.webp')"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                    class="pe-7s-shopbag"></i></button>
+                                            <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Wishlist"><i
+                                                    class="pe-7s-like"></i></button>
+                                            <button class="action quickview" data-link-action="quickview"
+                                                title="Quick view" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i class="pe-7s-look"></i></button>
+                                            <button class="action compare" title="Compare" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Compare"><i
+                                                    class="pe-7s-refresh-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
+                                    <!-- Single Prodect -->
+                                    <div class="product">
+                                        <span class="badges">
+                                            <span class="sale">-10%</span>
+                                            <span class="new">New</span>
+                                        </span>
+                                        <div class="thumb">
+                                            <a href="Single Product/Redmi-K50i.html" class="image"
+                                                style="height: 257px;">
+                                                <img src="assets/images/Redmi/Redmi-k50i-1.webp"
+                                                    style="height: 300px; margin-left: 60px;" alt="Product" />
+                                                <img class="hover-image" src="assets/images/Redmi/Redmi-k50i-1.webp"
+                                                    style="height: 300px; margin-left: 60px;" alt="Product" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <span class="category"><a href="#">Brand: REDMI</a></span>
+                                            <h5 class="title"><a href="Single Product/Redmi-K50i.html">Redmi K50i
+                                                </a>
+                                            </h5>
+                                            <span class="price">
+                                                <!-- <span class="old">$248.50</span> -->
+                                                <span class="new">₹24,999</span>
+                                            </span>
+                                        </div>
+                                        <div class="actions">
+                                            <button title="Add To Cart" class="action add-to-cart"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                    class="pe-7s-shopbag"></i></button>
+                                            <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Wishlist"><i
+                                                    class="pe-7s-like"></i></button>
+                                            <button class="action quickview" data-link-action="quickview"
+                                                title="Quick view" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i class="pe-7s-look"></i></button>
+                                            <button class="action compare" title="Compare" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Compare"><i
+                                                    class="pe-7s-refresh-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
+                                    <!-- Single Prodect -->
+                                    <div class="product">
+                                        <span class="badges">
+                                            <span class="new">New</span>
+                                        </span>
+                                        <div class="thumb">
+                                            <a href="Single Product/Redmi-Note-11pro.html" class="image">
+                                                <img src="assets/images/Redmi/Redmi-note-11pro-2.jpg" alt="Product" />
+                                                <img class="hover-image"
+                                                    src="assets/images/Redmi/Redmi-note-11pro-2.jpg" alt="Product" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <span class="category"><a href="#">Brand: REDMI</a></span>
+                                            <h5 class="title"><a src="assets/images/Redmi/Redmi-note-11pro-2.jpg">Redmi
+                                                    Note 11 Pro
+                                                </a>
+                                            </h5>
+                                            <span class="price">
+                                                <span class="new">₹15,150</span>
+                                            </span>
+                                        </div>
+                                        <div class="actions">
+                                            <button title="Add To Cart" class="action add-to-cart"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                    class="pe-7s-shopbag"></i></button>
+                                            <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Wishlist"><i
+                                                    class="pe-7s-like"></i></button>
+                                            <button class="action quickview" data-link-action="quickview"
+                                                title="Quick view" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i class="pe-7s-look"></i></button>
+                                            <button class="action compare" title="Compare" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Compare"><i
+                                                    class="pe-7s-refresh-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2nd tab end -->
+                        <!-- 3rd tab start -->
+                        <div class="tab-pane fade" id="featured">
+                            <div class="row">
+                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
+                                    <!-- Single Prodect -->
+                                    <div class="product">
+                                        <span class="badges">
+                                        </span>
+                                        <div class="thumb">
+                                            <a href="/Single Product/vivo-v21.html" style="height: 257px;"
+                                                class="image">
+                                                <img src="assets/images/vivo/vivo-V21.jpg"
+                                                    style="height: 300px; margin-left: 60px;" alt="Product" />
+                                                <img class="hover-image" src="assets/images/vivo/vivo-V21.jpg"
+                                                    style="height: 300px; margin-left: 60px;" alt="Product" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <span class="category"><a href="#">Brand: VIVO</a></span>
+                                            <h5 class="title"><a href="/Single Product/vivo-v21.html">VIVO-21e
+                                                </a>
+                                            </h5>
+                                            <span class="price">
+                                                <span class="new">₹21,490</span>
+                                            </span>
+                                        </div>
+                                        <div class="actions">
+                                            <button title="Add To Cart" class="action add-to-cart"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                    class="pe-7s-shopbag"></i></button>
+                                            <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Wishlist"><i
+                                                    class="pe-7s-like"></i></button>
+                                            <button class="action quickview" data-link-action="quickview"
+                                                title="Quick view" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i class="pe-7s-look"></i></button>
+                                            <button class="action compare" title="Compare" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Compare"><i
+                                                    class="pe-7s-refresh-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
+                                    <!-- Single Prodect -->
+                                    <div class="product">
+                                        <span class="badges">
+                                            <span class="sale">-5%</span>
+                                        </span>
+                                        <div class="thumb">
+                                            <a href="Single Product/vivo-x80.html" style="height: 257px;" class="image">
+                                                <img src="assets/images/vivo/vivo-x80-0.webp" style="padding: 20px;"
+                                                    alt="Product" />
+                                                <img class="hover-image" style="padding: 20px;"
+                                                    src="assets/images/vivo/vivo-x80-0.webp" alt="Product" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <span class="category"><a href="#">Brand: Vivo</a></span>
+                                            <h5 class="title"><a href="Single Product/vivo-x80.html">Vivo x80
+                                                </a>
+                                            </h5>
+                                            <span class="price">
+                                                <!-- <span class="old">$568.09</span> -->
+                                                <span class="new">₹54,999 </span>
+                                            </span>
+                                        </div>
+                                        <div class="actions">
+                                            <button title="Add To Cart" class="action add-to-cart"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                    class="pe-7s-shopbag"></i></button>
+                                            <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Wishlist"><i
+                                                    class="pe-7s-like"></i></button>
+                                            <button class="action quickview" data-link-action="quickview"
+                                                title="Quick view" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i class="pe-7s-look"></i></button>
+                                            <button class="action compare" title="Compare" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Compare"><i
+                                                    class="pe-7s-refresh-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
+                                    <!-- Single Prodect -->
+                                    <div class="product">
+                                        <span class="badges">
+                                            <span class="new">Sale</span>
+                                        </span>
+                                        <div class="thumb">
+                                            <a href="Single Product/Oppo-Reno-7.html"
+                                                style="height: 257px; padding: 20px;" class="image">
+                                                <img style="padding: 20px;" src="assets/images/oppo/oppo reno-7-1.jpg"
+                                                    alt="Product" />
+                                                <img class="hover-image" style="padding: 40px;"
+                                                    src="assets/images/oppo/oppo reno-7-1.jpg" alt="Product" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <span class="category"><a href="#">Brand: Oppo reno 7</a></span>
+                                            <h5 class="title"><a href="Single Product/Oppo-Reno-7.html">oppo reno 7
+                                                </a>
+                                            </h5>
+                                            <span class="price">
+                                                <span class="new">₹17,389</span>
+                                            </span>
+                                        </div>
+                                        <div class="actions">
+                                            <button title="Add To Cart" class="action add-to-cart"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                    class="pe-7s-shopbag"></i></button>
+                                            <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Wishlist"><i
+                                                    class="pe-7s-like"></i></button>
+                                            <button class="action quickview" data-link-action="quickview"
+                                                title="Quick view" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i class="pe-7s-look"></i></button>
+                                            <button class="action compare" title="Compare" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Compare"><i
+                                                    class="pe-7s-refresh-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
+                                    <!-- Single Prodect -->
+                                    <div class="product">
+                                        <span class="badges">
+                                            <span class="sale">-8%</span>
+                                            <span class="new">Sale</span>
+                                        </span>
+                                        <div class="thumb">
+                                            <a href="Single Product/Vivo-v29-5g-pro.html" class="image">
+                                                <img src="assets/images/vivo/vivo-V29-pro-5g-black.jpg" alt="Product" />
+                                                <img class="hover-image"
+                                                    src="assets/images/vivo/vivo-V29-pro-5g-black.jpg" alt="Product" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <span class="category"><a href="#">Brand: Vivo</a></span>
+                                            <h5 class="title"><a href="Single Product/Vivo-v29-5g-pro.html">vivo V29
+                                                </a>
+                                            </h5>
+                                            <span class="price">
+                                                <!-- <span class="old">$93.83</span> -->
+                                                <span class="new">₹42,999</span>
+                                            </span>
+                                        </div>
+                                        <div class="actions">
+                                            <button title="Add To Cart" class="action add-to-cart"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                    class="pe-7s-shopbag"></i></button>
+                                            <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Wishlist"><i
+                                                    class="pe-7s-like"></i></button>
+                                            <button class="action quickview" data-link-action="quickview"
+                                                title="Quick view" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i class="pe-7s-look"></i></button>
+                                            <button class="action compare" title="Compare" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Compare"><i
+                                                    class="pe-7s-refresh-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
+                                    <!-- Single Prodect -->
+                                    <div class="product">
+                                        <span class="badges">
+                                            <span class="new">New</span>
+                                        </span>
+                                        <div class="thumb">
+                                            <a href="Single Product/sam-galaxy-s22.html" class="image">
+                                                <img src="assets/images/samsung/Sam-galaxy-S22.jpg" alt="Product" />
+                                                <img class="hover-image" src="assets/images/samsung/Sam-galaxy-S22.jpg"
+                                                    alt="Product" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <span class="category"><a href="#">Brand: HP</a></span>
+                                            <h5 class="title"><a href="Single Product/sam-galaxy-s22.html">SAMSUNG
+                                                    GALAXY S22
+                                                </a>
+                                            </h5>
+                                            <span class="price">
+                                                <span class="new">₹39,999</span>
+                                            </span>
+                                        </div>
+                                        <div class="actions">
+                                            <button title="Add To Cart" class="action add-to-cart"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                    class="pe-7s-shopbag"></i></button>
+                                            <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Wishlist"><i
+                                                    class="pe-7s-like"></i></button>
+                                            <button class="action quickview" data-link-action="quickview"
+                                                title="Quick view" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i class="pe-7s-look"></i></button>
+                                            <button class="action compare" title="Compare" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Compare"><i
+                                                    class="pe-7s-refresh-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
+                                    <!-- Single Prodect -->
+                                    <div class="product">
+                                        <span class="badges">
+                                            <span class="new">New</span>
+                                        </span>
+                                        <div class="thumb">
+                                            <a href="Single Product/sam-galaxy-A54.html" style="height: 238px;"
+                                                class="image">
+                                                <img src="assets/images/samsung/sam-galaxy-A34.jpg" alt="Product" />
+                                                <img class="hover-image" src="assets/images/samsung/sam-galaxy-A34.jpg"
+                                                    alt="Product" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <span class="category"><a href="#">Brand:SAMSUNG</a></span>
+                                            <h5 class="title"><a href="single-product.html">SAMSUNG Samsung-galaxy-A34
+                                                </a>
+                                            </h5>
+                                            <span class="price">
+                                                <span class="new">₹24,999</span>
+                                            </span>
+                                        </div>
+                                        <div class="actions">
+                                            <button title="Add To Cart" class="action add-to-cart"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                    class="pe-7s-shopbag"></i></button>
+                                            <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Wishlist"><i
+                                                    class="pe-7s-like"></i></button>
+                                            <button class="action quickview" data-link-action="quickview"
+                                                title="Quick view" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i class="pe-7s-look"></i></button>
+                                            <button class="action compare" title="Compare" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Compare"><i
+                                                    class="pe-7s-refresh-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
+                                    <!-- Single Prodect -->
+                                    <div class="product">
+                                        <span class="badges">
+                                            <span class="new">Sale</span>
+                                        </span>
+                                        <div class="thumb">
+                                            <a href="Single Product/Oppo-Reno-K10.html" class="image">
+                                                <img src="assets/images/oppo/oppo-reno-k10-2.webp"
+                                                    style="height: 237px; margin-left: 40px;" alt="Product" />
+                                                <img class="hover-image" src="assets/images/oppo/oppo-reno-k10-2.webp"
+                                                    style="height: 237px; margin-left: 40px;" alt="Product" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <span class="category"><a href="#">Brand: HP</a></span>
+                                            <h5 class="title"><a href="Single Product/Oppo-Reno-K10-1.html">OPPO K10 5G
+                                                    (Ocean Blue, 128 GB)
+                                                </a>
+                                            </h5>
+                                            <span class="price">
+                                                <span class="new">₹25,999</span>
+                                            </span>
+                                        </div>
+                                        <div class="actions">
+                                            <button title="Add To Cart" class="action add-to-cart"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                    class="pe-7s-shopbag"></i></button>
+                                            <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Wishlist"><i
+                                                    class="pe-7s-like"></i></button>
+                                            <button class="action quickview" data-link-action="quickview"
+                                                title="Quick view" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i class="pe-7s-look"></i></button>
+                                            <button class="action compare" title="Compare" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Compare"><i
+                                                    class="pe-7s-refresh-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px">
+                                    <!-- Single Prodect -->
+                                    <div class="product">
+                                        <span class="badges">
+                                            <span class="sale">-10%</span>
+                                            <span class="new">New</span>
+                                        </span>
+                                        <div class="thumb">
+                                            <a href="Single Product/Vivo-v29-5g-pro.html" class="image">
+                                                <img src="assets/images/vivo/vivo-V29-pro-5g-black.jpg" alt="Product" />
+                                                <img class="hover-image"
+                                                    src="assets/images/vivo/vivo-V29-pro-5g-black.jpg" alt="Product" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <span class="category"><a href="#">Brand: HP</a></span>
+                                            <h5 class="title"><a href="Single Product/Vivo-v29-5g-pro.html">Vivo
+                                                </a>
+                                            </h5>
+                                            <span class="price">
+                                                <span class="old">$248.50</span>
+                                                <span class="new">$210.02</span>
+                                            </span>
+                                        </div>
+                                        <div class="actions">
+                                            <button title="Add To Cart" class="action add-to-cart"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                    class="pe-7s-shopbag"></i></button>
+                                            <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Wishlist"><i
+                                                    class="pe-7s-like"></i></button>
+                                            <button class="action quickview" data-link-action="quickview"
+                                                title="Quick view" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i class="pe-7s-look"></i></button>
+                                            <button class="action compare" title="Compare" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Compare"><i
+                                                    class="pe-7s-refresh-2"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3rd tab end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product Area End -->
+
+    <!-- ====================================Banner================================================ -->
+
+
+
+    <div class="carousel">
+        <div class="carousel-slide active">
+            <img src="/assets/images/banner/background2.png" alt="Image 1">
+        </div>
+        <div class="carousel-slide">
+            <img src="/assets/images/banner/banner img.jpg" alt="Image 2">
+        </div>
+        <div class="carousel-slide">
+            <img src="/assets/images/banner/background3.jpg" alt="Image 3">
+        </div>
+    </div>
+
+    <!-- <button class="prev">Prev</button>
+    <button class="next">Next</button> -->
+    <!-- =========================================================//// -->
+
+    <div class="banner-area style-one pt-100px pb-100px">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="single-banner nth-child-1">
+                        <a href="shop-left-sidebar-1.html"><img class="pr_img" src="/assets/images/banner/new-1.jpg"
+                                height="300px" width="300px" alt=""></a>
+                        <span>
+                            <h3 class="title">
+                                Samsung Galaxy M04 Dark Blue.</h3>
+                            <span class="category">From ₹17,250</span>
+                            <a href="/Single Product/sam-galaxy-A34.html" class="shop-link"><i class="fa fa-arrow-right"
+                                    aria-hidden="true"></i></a>
+                        </span>
+
+
+                    </div>
+
+                    <div class="single-banner banner-content nth-child-1">
+                        <a href="/Single Product/sam-galaxy-zflip.html"><img
+                                src="/assets/images/samsung/Sam-Galaxy-Zflip3.jpg" class="pr_img" height="300px"
+                                width="300px" alt=""></a>
+
+                        <h3 class="title">
+                            Samsung Galaxy Z flip</h3>
+                        <span class="category">From ₹98,490</span>
+                        <a href="/Single Product/sam-galaxy-zflip.html" class="shop-link"><i class="fa fa-arrow-right"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="single-banner nth-child-2">
+                        <div class="newimg"><a href="/Single Product/iphone-15-proMax.html"><img class="pr_img"
+                                    src="/assets/images/iphone/iphone-15-proMax.jpg" height="300px" width="300px"
+                                    alt=""></a></div>
+                    </div>
+                    <div class="banner-content nth-child-2">
+                        <h3 class="title iphone">
+                            Apple iPhone 15 (256 GB) </h3>
+                        <span class="category">From ₹89,900</span>
+                        <a href="/Single Product/iphone-15.html" class="shop-link"><i class="fa fa-arrow-right"
+                                aria-hidden="true"></i></a>
+                    </div>
+                    <div class="single-banner nth-child-2">
+                        <div class="newimg"><a href="Single Product/iphone-15.html"><img class="pr_img"
+                                    src="/assets/images/banner/new-3.jpg" height="300px" width="300px" alt=""></a></div>
+                    </div>
+                    <div class="banner-content nth-child-3">
+                        <h3 class="title">RealMe Narzo 60X</h3>
+                        <span class="category">From ₹14,059
+                        </span>
+                        <a href="/Single Product/vivo-x-100.html" class="shop-link"><i class="fa fa-arrow-right"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ============================================================================ -->
+
+    <!-- Testimonial area start -->
+    <div class="trstimonial-area pt-100px pb-100px">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center m-0">
+                        <h2 class="title">Client Feedback</h2>
+                        <p><strong> SmartPhone- </strong> High-resolution camera ,
+                            Long-lasting battery ,
+                            Fast processor ,
+                            Expandable storage ,
+                            Water-resistant ,
+                            Secure biometric authentication ,
+                            Immersive display ,
+                            AI-powered assistant.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <!-- Swiper -->
+                    <div class="swiper-container content-top slider-nav-style-1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testi-inner">
+                                    <div class="testi-content">
+                                        <p>"This smartphone exceeded my expectations. The camera captures stunning
+                                            photos, the battery
+                                            lasts all day, and the display is brilliant. Highly recommended!"
+                                        </p>
+                                    </div>
+                                    <div class="testi-author">
+                                        <div class="author-image">
+                                            <img class="img-responsive" src="assets/images/testimonial/1.png" alt="">
+                                        </div>
+                                        <div class="author-name">
+                                            <h4 class="name">Regan Rosen<span>Client</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testi-inner">
+                                    <div class="testi-content">
+                                        <p>"Absolutely love this smartphone! Sleek design, stunning camera,
+                                            lightning-fast performance.
+                                            It's a game-changer in every way possible. Highly recommend!"
+
+                                        </p>
+                                    </div>
+                                    <div class="testi-author">
+                                        <div class="author-image">
+                                            <img class="img-responsive" src="assets/images/new/test-4.png" alt="">
+                                        </div>
+                                        <div class="author-name">
+                                            <h4 class="name">John Martin<span>Client</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testi-inner">
+                                    <div class="testi-content">
+                                        <p>
+                                            "This smartphone is a game-changer! With its impressive camera, long-lasting
+                                            battery,
+                                            and smooth performance, it's definitely worth every penny. Highly
+                                            satisfied!"
+                                        </p>
+                                    </div>
+                                    <div class="testi-author">
+                                        <div class="author-image">
+                                            <img class="img-responsive" src="assets/images/new/test-3.png" alt="">
+                                        </div>
+                                        <div class="author-name">
+                                            <h4 class="name">Allen Curt<span>Client</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testi-inner">
+                                    <div class="testi-content">
+                                        <p>"Thrilled with this smartphone! Sleek design, exceptional camera quality,
+                                            seamless performance.
+                                            It's truly a powerhouse that elevates my daily experience. Highly
+                                            recommend!"
+                                        </p>
+                                    </div>
+                                    <div class="testi-author">
+                                        <div class="author-image">
+                                            <img class="img-responsive" src="assets/images/new/test-2.png" alt="">
+                                        </div>
+                                        <div class="author-name">
+                                            <h4 class="name">Alisa Burp<span>Client</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-buttons">
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonial area end-->
+
+    <!-- Footer Area Start -->
+    <div class="footer-area">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <!-- Start single blog -->
+                        <div class="col-md-6 col-lg-3 mb-md-30px mb-lm-30px">
+                            <div class="single-wedge">
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="/assets/images/logo/Atharva-removebg-preview.png"
+                                            alt=""></a>
+                                </div>
+                                <p class="about-text">SmartPhone Collection
+                                </p>
+                                <ul class="link-follow">
+                                    <li>
+                                        <a class="m-0" title="Twitter" target="_blank" rel="noopener noreferrer"
+                                            href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a title="Tumblr" target="_blank" rel="noopener noreferrer" href="#"><i
+                                                class="fa fa-tumblr" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a title="Facebook" target="_blank" rel="noopener noreferrer" href="#"><i
+                                                class="fa fa-twitter" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a title="Instagram" target="_blank" rel="noopener noreferrer" href="#"><i
+                                                class="fa fa-instagram" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End single blog -->
+                        <!-- Start single blog -->
+                        <div class="col-md-6 col-lg-3 col-sm-6 mb-lm-30px pl-lg-60px">
+                            <div class="single-wedge">
+                                <h4 class="footer-herading">Services</h4>
+                                <div class="footer-links">
+                                    <div class="footer-row">
+                                        <ul class="align-items-center">
+                                            <li class="li"><a class="single-link" href="/index.html">Home
+                                                </a></li>
+                                            <li class="li"><a class="single-link" href="/about.html">about</a>
+                                            </li>
+                                            <li class="li"><a class="single-link"
+                                                    href="/shop-left-sidebar-1.html">shop</a>
+                                            </li>
+                                            <li class="li"><a class="single-link" href="/contact.html">contact</a>
+                                            </li>
+                                            <li class="li"><a class="single-link" href="switch/index1.html">offer</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End single blog -->
+                        <!-- Start single blog -->
+                        <div class="col-md-6 col-lg-3 col-sm-6 mb-lm-30px pl-lg-40px">
+                            <div class="single-wedge">
+                                <div class="footer-links">
+                                    <div class="footer-row">
+                                        <h4 class="footer-herading">Important Links</h4>
+                                        <ul class="align-items-center">
+
+                                            <li class="li"><a class="single-link" href="terms&condition.html">Terms &
+                                                    condition</a>
+                                            </li>
+                                            <li class="li"><a class="single-link" href="privacyPolicy.html">Privacy
+                                                    policy</a>
+                                            </li>
+                                            <li class="li"><a class="single-link" href="refundPolicy.html">Refund
+                                                    Policy</a>
+                                            </li>
+
+                                            <li class="li"><a class="single-link" href="shipingPolicy.html">Shipping
+                                                    Policy</a>
+                                            </li>
+                                            <!-- <li class="li"><a class="single-link" href="login.html"></a></li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End single blog -->
+                        <!-- Start single blog -->
+                        <div class="col-md-6 col-lg-3 col-sm-12">
+                            <div class="single-wedge">
+                                <h4 class="footer-herading">Contact Info</h4>
+                                <div class="footer-links">
+                                    <!-- News letter area -->
+                                    <p class="address">Address:New Delhi</p>
+
+                                    <p class="mail">Email:<a href="mailto:info@atharva96@gmail.com">
+                                            info@atharva96@gmail.com</a>
+                                    </p>
+                                    <!-- News letter area  End -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End single blog -->
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="line-shape-top line-height-1">
+                        <div class="row flex-md-row-reverse align-items-center">
+                            <div class="col-md-6 text-center text-md-end">
+                                <div class="payment-mth"><a href="#"><img class="img img-fluid"
+                                            src="assets/images/icons/payment.png" alt="payment-image"></a></div>
+                            </div>
+                            <div class="col-md-6 text-center text-md-start">
+                                <p class="copy-text"> © 2024 <strong>SmartPhoneCollection </strong> Made With <i
+                                        class="fa fa-heart" aria-hidden="true"></i> By
+                                    <strong> SmartPhone</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Area End -->
+    </div>
+
+
+    <!-- Modal -->
+    <!-- <div class="modal modal-2 fade" id="exampleModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> <i
+                            class="pe-7s-close"></i></button>
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12 col-xs-12 mb-lm-30px mb-md-30px mb-sm-30px">
+                         
+                            <div class="swiper-container gallery-top">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class="img-responsive m-auto" src="assets/images/new/1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-responsive m-auto" src="assets/images/new/2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-responsive m-auto" src="assets/images/new/4.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-responsive m-auto" src="assets/images/new/5.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-responsive m-auto" src="assets/images/new/6.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-container gallery-thumbs mt-20px slider-nav-style-1 small-nav">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class="img-responsive m-auto" src="assets/images/new/1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-responsive m-auto" src="assets/images/new/2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-responsive m-auto" src="assets/images/new/3.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-responsive m-auto" src="assets/images/new/4.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-responsive m-auto" src="assets/images/new/5.png" alt="">
+                                    </div>
+                                </div>
+                        
+                                <div class="swiper-buttons">
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-delay="200">
+                            <div class="product-details-content quickview-content">
+                                <h2>Modern Smart Phone</h2>
+                                <div class="pricing-meta">
+                                    <ul class="d-flex">
+                                        <li class="new-price">$20.90</li>
+                                    </ul>
+                                </div>
+                                <div class="pro-details-rating-wrap">
+                                    <div class="rating-product">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <span class="read-review"><a class="reviews" href="#">( 2 Review )</a></span>
+                                </div>
+                                <p class="mt-30px">Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmll
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mill veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip exet commodo consequat. Duis
+                                    aute irure dolor</p>
+                                <div class="pro-details-categories-info pro-details-same-style d-flex m-0">
+                                    <span>SKU:</span>
+                                    <ul class="d-flex">
+                                        <li>
+                                            <a href="#">Ch-256xl</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pro-details-categories-info pro-details-same-style d-flex m-0">
+                                    <span>Categories: </span>
+                                    <ul class="d-flex">
+                                        <li>
+                                            <a href="#">Smart Device, </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">ETC</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pro-details-categories-info pro-details-same-style d-flex m-0">
+                                    <span>Tags: </span>
+                                    <ul class="d-flex">
+                                        <li>
+                                            <a href="#">Smart Device, </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Phone</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pro-details-quality">
+                                    <div class="cart-plus-minus">
+                                        <input class="cart-plus-minus-box" type="text" name="qtybutton" value="1" />
+                                    </div>
+                                    <div class="pro-details-cart">
+                                        <button class="add-cart"> </button>
+                                    </div>
+                                    <div class="pro-details-compare-wishlist pro-details-wishlist ">
+                                        <a href="wishlist.html"><i class="pe-7s-like"></i></a>
+                                    </div>
+                                </div>
+                                <div class="payment-img">
+                                    <a href="#"><img src="assets/images/icons/payment.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Modal end -->
+    <!-- Modal Cart -->
+    <!-- <div class="modal customize-class fade" id="exampleModal-Cart" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                            class="pe-7s-close"></i></button>
+                    <div class="tt-modal-messages">
+                        <i class="pe-7s-check"></i> Added to cart successfully!
+                    </div>
+                    <div class="tt-modal-product">
+                        <div class="tt-img">
+                            <img src="assets/images/new/1.png" alt="Modern Smart Phone">
+                        </div>
+                        <h2 class="tt-title"><a href="#">HP Laserjet M126a B&W Printer</a></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Modal wishlist -->
+    <!-- <div class="modal customize-class fade" id="exampleModal-Wishlist" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                            class="pe-7s-close"></i></button>
+                    <div class="tt-modal-messages">
+                        <i class="pe-7s-check"></i> Added to Wishlist successfully!
+                    </div>
+                    <div class="tt-modal-product">
+                        <div class="tt-img">
+                            <img src="assets/images/new/1.png" alt="Modern Smart Phone">
+                        </div>
+                        <h2 class="tt-title"><a href="#">HP Laserjet M126a B&W Printer</a></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Cart section -->
+
+
+
+    <!-- Modal compare -->
+
+
+
+
+    <!-- JS Files
+    ============================================ -->
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="assets/js/plugins/jquery.countdown.min.js"></script>
+    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="assets/js/plugins/scrollUp.js"></script>
+    <script src="assets/js/plugins/venobox.min.js"></script>
+    <script src="assets/js/plugins/jquery-ui.min.js"></script>
+    <script src="assets/js/plugins/mailchimp-ajax.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+    <!--Start of Tawk.to Script-->
+
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/65704fa1bfb79148e59a9f22/1hgvbe4ge';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+
+
+        function addToCart(itemName, itemPrice, itemImage) {
+            // Retrieve the cart from localStorage or initialize an empty cart
+            var cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Add the item to the cart
+            cart.push({ name: itemName, price: itemPrice, image: itemImage });
+
+            // Save the updated cart back to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Update the cart display
+            updateCartDisplay();
+
+            // Alert the user that the item has been added to the cart
+            alert('Item added to cart!');
+        }
+
+        // function updateCartDisplay() {
+        //     // Retrieve the cart from localStorage
+        //     var cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        //     // Get the cart element
+        //     var cartElement = document.getElementById('cart');
+
+        //     // Clear existing content
+        //     cartElement.innerHTML = '';
+
+        //     // Add new content for each item in the cart
+        //     if (cart.length === 0) {
+        //         cartElement.innerHTML = '<p>Your cart is empty</p>';
+        //     } else {
+        //         var cartList = document.createElement('ul');
+        //         cart.forEach(function (item) {
+        //             var listItem = document.createElement('li');
+        //             var image = document.createElement('img');
+        //             image.src = item.image;
+        //             listItem.appendChild(image);
+        //             // listItem.textContent += item.name + ' - $' + item.price;
+        //             listItem.innerHTML += '<img src="' + item.imageURL + '" alt="' + item.name + '" height="100px" width="auto"> ' + item.name + ' - $' + item.price;
+        //             cartList.appendChild(listItem);
+        //             listItem.innerHTML += `<button onclick=messege() id="buyButton">Buy Now</button>`
+        //         });
+        //         cartElement.appendChild(cartList);
+        //     }
+        // }
+        function updateCartDisplay() {
+            // Retrieve the cart from localStorage
+            var cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Get the cart element
+            var cartElement = document.getElementById('cart');
+
+            // Clear existing content
+            cartElement.innerHTML = '';
+
+            // Add new content for each item in the cart
+            if (cart.length === 0) {
+                cartElement.innerHTML = '<p>Your cart is empty</p>';
+            } else {
+                var cartList = document.createElement('ul');
+                cartList.classList.add('cart-list');
+                cart.forEach(function (item, index) {
+                    var listItem = document.createElement('li');
+                    listItem.classList.add('cart-item');
+                    var image = document.createElement('img');
+                    image.src = item.image;
+                    image.alt = item.name;
+                    image.classList.add('product-image');
+
+                    // Append image to list item
+                    listItem.appendChild(image);
+
+                    // Product details container
+                    var detailsContainer = document.createElement('div');
+                    detailsContainer.classList.add('product-details');
+
+                    // Append item name to details container
+                    var itemName = document.createElement('p');
+                    itemName.textContent = item.name;
+                    itemName.classList.add('product-name');
+                    detailsContainer.appendChild(itemName);
+
+                    // Append item price to details container
+                    var itemPrice = document.createElement('p');
+                    itemPrice.textContent = '$' + item.price;
+                    itemPrice.classList.add('product-price');
+                    detailsContainer.appendChild(itemPrice);
+
+                    // Append "Buy Now" button to details container
+                    var buyButton = document.createElement('button');
+                    buyButton.textContent = 'Buy Now';
+                    buyButton.classList.add('buy-button');
+                    buyButton.onclick = function () {
+                        // Add your buy now functionality here
+                        // For example, you can call a function to handle the buy now action
+                        message();
+                    };
+                    detailsContainer.appendChild(buyButton);
+
+                    // Append "Delete" button to details container
+                    var deleteButton = document.createElement('button');
+                    deleteButton.textContent = 'Delete';
+                    deleteButton.classList.add('delete-button');
+                    deleteButton.onclick = function () {
+                        // Remove item from cart
+                        cart.splice(index, 1);
+                        // Update the cart in localStorage
+                        localStorage.setItem('cart', JSON.stringify(cart));
+                        // Update the display
+                        updateCartDisplay();
+                    };
+                    detailsContainer.appendChild(deleteButton);
+
+                    // Append details container to list item
+                    listItem.appendChild(detailsContainer);
+
+                    // Append list item to cart list
+                    cartList.appendChild(listItem);
+                });
+                cartElement.appendChild(cartList);
+            }
+        }
+
+
+        function message() {
+            alert('out of stock')
+        }
+
+        // Call updateCartDisplay when the page loads to initialize the cart display
+        window.onload = updateCartDisplay;
+    </script>
+
+    </script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/65f80c5ccc1376635adbc011/1hp8f0j2f';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <!--End of Tawk.to Script-->
+
+
+
+
+    <!-- ============================Banner Script start================= -->
+
+    <script>
+        const slides = document.querySelectorAll('.carousel-slide');
+        const totalSlides = slides.length;
+        let currentIndex = 0;
+        const slideInterval = 3000; // Change slide interval as needed (in milliseconds)
+        let slideTimer;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.classList.add('active');
+                } else {
+                    slide.classList.remove('active');
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            showSlide(currentIndex);
+        }
+
+        function startSlideShow() {
+            slideTimer = setInterval(nextSlide, slideInterval);
+        }
+
+        function stopSlideShow() {
+            clearInterval(slideTimer);
+        }
+
+
+
+        // document.querySelector('.next').addEventListener('click', () => {
+        //     stopSlideShow();
+        //     nextSlide();
+        //     startSlideShow();
+        // });
+
+        // document.querySelector('.prev').addEventListener('click', () => {
+        //     stopSlideShow();
+        //     currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        //     showSlide(currentIndex);
+        //     startSlideShow();
+        // });
+
+        startSlideShow();
+
+
+
+    </script>
+    <!-- ============================Banner Script end================= -->
+</body>
+
+
+</html>

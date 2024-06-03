@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auto Sliding Carousel</title>
+<style>
+  .carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .carousel-slide {
+    display: none;
+  }
+  .carousel-slide img {
+    width: 100%;
+    height: 400px;
+  }
+  .carousel-slide.active {
+    display: block;
+  }
+  .prev{
+    position: relative;
+    top: 385%;
+    left: 10px;
+    height: 60px;
+    width: 80px;
+    border-radius: 0px 30% 30% 0px;
+    background-color: rgba(226, 142, 31, 0.616);
+  }
+  .next{
+    position: relative;
+    top: 385%;
+    right: 10px;
+    height: 60px;
+    width: 80px;
+    border-radius:  30%  0px 0px 30% ;
+    background-color: rgba(226, 142, 31, 0.616);
+  }
+</style>
+</head>
+<body>
+
+<div class="carousel">
+  <div class="carousel-slide active">
+    <img src="/assets/images/banner/background2.png" alt="Image 1">
+  </div>
+  <div class="carousel-slide">
+    <img src="/assets/images/banner/banner img.jpg" alt="Image 2">
+  </div>
+  <div class="carousel-slide">
+    <img src="/assets/images/banner/background3.jpg" alt="Image 3">
+  </div>
+</div>
+
+<button class="prev">Prev</button>
+<button class="next">Next</button>
+
+<script>
+  const slides = document.querySelectorAll('.carousel-slide');
+  const totalSlides = slides.length;
+  let currentIndex = 0;
+  const slideInterval = 3000; // Change slide interval as needed (in milliseconds)
+  let slideTimer;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      if (i === index) {
+        slide.classList.add('active');
+      } else {
+        slide.classList.remove('active');
+      }
+    });
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    showSlide(currentIndex);
+  }
+
+  function startSlideShow() {
+    slideTimer = setInterval(nextSlide, slideInterval);
+  }
+
+  function stopSlideShow() {
+    clearInterval(slideTimer);
+  }
+
+  document.querySelector('.next').addEventListener('click', () => {
+    stopSlideShow();
+    nextSlide();
+    startSlideShow();
+  });
+
+  document.querySelector('.prev').addEventListener('click', () => {
+    stopSlideShow();
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    showSlide(currentIndex);
+    startSlideShow();
+  });
+
+  startSlideShow();
+</script>
+
+</body>
+</html>
