@@ -26,6 +26,7 @@
     <!-- Minify Version -->
     <!-- <link rel="stylesheet" href="assets/css/plugins.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="product.js"></script>
     <style>
         .hero-slide-image {
@@ -37,6 +38,27 @@
             width: 60%;
             margin-left: 25%;
             margin-top: -95px;
+        }
+
+        .carousel-item {
+            transition: transform 0.5s ease-in-out !important;
+        }
+        .carousel-item img {
+            margin: auto;
+            max-height: 500px;
+        }
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: black;
+            border-radius: 50%;
+        }
+        .carousel-indicators li {
+            background-color: black;
         }
     </style>
     <!-- =========================================banner css start============================= -->
@@ -133,7 +155,6 @@
         }
 
         /* Cart list styles */
-       
     </style>
 
     <!-- ===================================================banner css end=========================== -->
@@ -490,45 +511,39 @@
         </div>
         <!-- OffCanvas Menu End -->
         <!-- Hero/Intro Slider Start -->
-        <div class="section ">
-            <div class="hero-slider swiper-container slider-nav-style-1 slider-dot-style-1">
-                <!-- Hero slider Active -->
-                <div class="swiper-wrapper">
-                    <!-- Single slider item -->
-                    <div class="hero-slide-item slider-height swiper-slide bg-color1">
-                        <div class="container h-100">
-                            <div class="row h-100">
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 align-self-center sm-center-view">
-                                    <div class="hero-slide-content slider-animated-1">
-                                        <span class="category">Welcome to our SmartPhone Collection</span>
-                                        <h2 class="title-1">Empowering connections, one touch at a time. your
-                                            world with our smartphone. </h2>
-                                        <a href="shop-left-sidebar-1.html" class="btn btn-primary text-capitalize">Shop
-                                            All</a>
-                                    </div>
-                                </div>
-                                <div
-                                    class="col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex justify-content-center position-relative align-items-end">
-                                    <div class="show-case">
-                                        <div class="hero-slide-image">
-                                            <img src="../assets/images/iphone/appleOffer.png" height="200px" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Single slider item -->
-                </div>
+
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="/Imgo/Bitdefender_Product-Banner-04 (1).png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/Imgo/webbanner_kaspersky-02-02 (1).jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/Imgo/webbanner_MCAffe-03-03 (1).jpg" alt="Third slide">
+              </div>
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination swiper-pagination-white"></div>
-            <!-- Add Arrows -->
-            <!-- <div class="swiper-buttons">
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div> -->
-        </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+        <!-- jQuery and Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </div>
     <!-- Hero/Intro Slider End -->
     <!-- Banner Area Start -->
@@ -550,12 +565,7 @@
                             <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab"
                                     data-bs-target="#newarrivals">New Arrivals</button>
                             </li>
-                            <li class="nav-item"><button class="nav-link " data-bs-toggle="tab"
-                                    data-bs-target="#toprated">Top Rated</button>
-                            </li>
-                            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab"
-                                    data-bs-target="#featured">Featured</button>
-                            </li>
+                           
                         </ul>
                     </div>
                     <!-- Tab End -->
@@ -575,17 +585,17 @@
                                             <span class="new">New</span>
                                         </span>
                                         <div class="thumb">
-                                            <a href="/Single Product/Redmi-Note-11pro.html" class="image">
-                                                <img src="/assets/images/Redmi/Redmi-Note_11Pro.jpg" alt="Product" />
-                                                <img class="hover-image" src="assets/images/Redmi/Redmi-Note_11Pro.jpg"
-                                                    alt="Product" />
+                                            <a href="/Single Product/Redmi-Note-11pro.html" class="image"
+                                                style="object-fit: cover;">
+                                                <img src="Imgo/na.jpg" alt="Product" />
+                                                <img class="hover-image" src="Imgo/na.jpg" alt="Product" />
                                             </a>
                                         </div>
                                         <div class="content">
                                             <span class="category"><a
-                                                    href="/Single Product/Redmi-Note-11pro.html">Brand:REDMI</a></span>
+                                                    href="/Single Product/Redmi-Note-11pro.html">Brand:Nortan</a></span>
                                             <h5 class="title"><a href="/Single Product/Redmi-Note-11pro.html">
-                                                    Redmi Note 11 Pro + 5G
+                                                    Nortan Antivirus
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -622,16 +632,13 @@
                                         </span>
                                         <div class="thumb">
                                             <a href="/Single Product/iphone-15-proMax.html" class="image">
-                                                <img src="/assets/images/iphone/iphone-15-proMax.jpg" alt="Product" />
-                                                <img class="hover-image"
-                                                    src="/assets/images/iphone/iphone-15-proMax.jpg" alt="Product" />
+                                                <img src="/Imgo/Ar.webp" alt="Product" />
+                                                <img class="hover-image" src="/Imgo/Ar.webp" alt="Product" />
                                             </a>
                                         </div>
                                         <div class="content">
-                                            <span class="category"><a href="#">Brand:Iphone</a></span>
-                                            <h5 class="title"><a href="/Single Product/iphone-15-proMax.html">Apple
-                                                    iPhone 15 Pro Max (256 GB)
-
+                                            <span class="category"><a href="#">Brand:Avira</a></span>
+                                            <h5 class="title"><a href="/Single Product/iphone-15-proMax.html">Avira Antivirus
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -663,15 +670,14 @@
                                         </span>
                                         <div class="thumb">
                                             <a href="/Single Product/Oppo-N2-flip.html" class="image">
-                                                <img src="/assets/images/oppo/oppo-N2flip.jpg" alt="Product" />
-                                                <img class="hover-image" src="/assets/images/oppo/oppo-N2flip.jpg"
-                                                    alt="Product" />
+                                                <img src="/Imgo/def.jpeg" alt="Product" />
+                                                <img class="hover-image" src="/Imgo/def.jpeg" alt="Product" />
                                             </a>
                                         </div>
                                         <div class="content">
                                             <span class="category"><a href="/Single Product/Oppo-N2-flip.html"></a>
-                                                Brand:OPPO </a></span>
-                                            <h5 class="title"><a href="/Single Product/Oppo-N2-flip.html">Oppo n2 flip
+                                                Brand:BiteDefender </a></span>
+                                            <h5 class="title"><a href="/Single Product/Oppo-N2-flip.html">BiteDefender
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -707,16 +713,15 @@
                                         <div class="thumb">
                                             <a href="/Single Product/Samsung Galaxy S21 FE 5G.html"
                                                 style="height: 235px;" class="image">
-                                                <img src="/assets/images/samsung/sam-galaxy-S21FE.jpg" alt="Product" />
-                                                <img class="hover-image"
-                                                    src="/assets/images/samsung/sam-galaxy-S21FE.jpg" alt="Product" />
+                                                <img src="/Imgo/into.webp" alt="Product" />
+                                                <img class="hover-image" src="/Imgo/into.webp" alt="Product" />
                                             </a>
                                         </div>
                                         <div class="content">
                                             <span class="category"><a
-                                                    href="/Single Product/Samsung Galaxy S21 FE 5G.html">Brand:Samsung</a></span>
+                                                    href="/Single Product/Samsung Galaxy S21 FE 5G.html">Brand:Intego</a></span>
                                             <h5 class="title"><a href="/Single Product/Samsung Galaxy S21 FE 5G.html">
-                                                    Samsung Galaxy S21 FE 5G
+                                                    Intego Antivirus
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -748,15 +753,14 @@
                                         </span>
                                         <div class="thumb">
                                             <a href="Single Product/samsung-zfold4.html" class="image">
-                                                <img src="/assets/images/samsung/sam-galaxy-Zfold4.jpg" alt="Product" />
-                                                <img class="hover-image"
-                                                    src="/assets/images/samsung/sam-galaxy-Zfold4.jpg" alt="Product" />
+                                                <img src="/Imgo/malwarebytes.webp" alt="Product" />
+                                                <img class="hover-image" src="/Imgo/malwarebytes.webp" alt="Product" />
                                             </a>
                                         </div>
                                         <div class="content">
-                                            <span class="category"><a href="#">Brand:Xiaomi</a></span>
+                                            <span class="category"><a href="#">Brand:MalwareByte</a></span>
                                             <h5 class="title"><a href="">
-                                                    realme narzo 60 5G (Cosmic Black,8GB+128GB)
+                                                  MalwareByte Anytivvirus
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -792,16 +796,14 @@
                                         </span>
                                         <div class="thumb">
                                             <a href="Single Product/iphone-14plus.html" class="image">
-                                                <img src="/assets/images/iphone/iphone-14Plus.jpg" alt="Product" />
-                                                <img class="hover-image" src="/assets/images/iphone/iphone-14Plus.jpg"
-                                                    alt="Product" />
+                                                <img src="/Imgo/mca.jpg" alt="Product" />
+                                                <img class="hover-image" src="/Imgo/mca.jpg" alt="Product" />
                                             </a>
                                         </div>
                                         <div class="content">
-                                            <span class="category"><a href="#">Brand:Apple</a></span>
-                                            <h5 class="title"><a href="Single Product/iphone-14plus.html">Apple iPhone
-                                                    14 Plus (512
-                                                    GB) - Blue
+                                            <span class="category"><a href="#">Brand:mCafee</a></span>
+                                            <h5 class="title"><a href="Single Product/iphone-14plus.html">McCafee Antivirus
+
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -837,17 +839,14 @@
                                         <div class="thumb">
                                             <a href="Single Product/sam-galaxy-s23Ultra.html" style="height: 237px;"
                                                 class="image">
-                                                <img src="/assets/images/samsung/Sam-galaxy-S23-Ultra.jpg"
-                                                    alt="Product" />
-                                                <img class="hover-image"
-                                                    src="/assets/images/samsung/Sam-galaxy-S23-Ultra.jpg"
-                                                    alt="Product" />
+                                                <img src="/Imgo/total.png" alt="Product" />
+                                                <img class="hover-image" src="/Imgo/total.png" alt="Product" />
                                             </a>
                                         </div>
                                         <div class="content">
-                                            <span class="category"><a href="#">Brand: Samsung</a></span>
+                                            <span class="category"><a href="#">Brand: TotalAv</a></span>
                                             <h5 class="title"><a href="single-product.html">
-                                                    Samsung Galaxy S23 Ultra 5G
+                                                   TotalAv Antivirus
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -880,17 +879,14 @@
                                         </span>
                                         <div class="thumb">
                                             <a href="Single Product/iphone-13.html" class="image">
-                                                <img src="/assets/images/iphone/iphone-13.jpg" alt="Product" />
-                                                <img class="hover-image" src="/assets/images/iphone/iphone-13.jpg"
-                                                    alt="Product" />
+                                                <img src="Imgo/tre.jpeg" alt="Product" />
+                                                <img class="hover-image" src="Imgo/tre.jpeg" alt="Product" />
                                             </a>
                                         </div>
                                         <div class="content">
                                             <span class="category"><a
-                                                    href="Single Product/iphone-13.html">Brand:Apple</a></span>
-                                            <h5 class="title"><a href="Single Product/iphone-13.html">Apple iPhone 13
-                                                    (256 GB) -
-                                                    Black
+                                                    href="Single Product/iphone-13.html">Brand:TrendMacro</a></span>
+                                            <h5 class="title"><a href="Single Product/iphone-13.html">trendMacro
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -1584,18 +1580,51 @@
     <!-- ====================================Banner================================================ -->
 
 
-
-    <div class="carousel">
-        <div class="carousel-slide active">
-            <img src="/assets/images/banner/background2.png" alt="Image 1">
-        </div>
-        <div class="carousel-slide">
-            <img src="/assets/images/banner/banner img.jpg" alt="Image 2">
-        </div>
-        <div class="carousel-slide">
-            <img src="/assets/images/banner/background3.jpg" alt="Image 3">
+    <div class="container mt-5">
+        <div id="productCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#productCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#productCarousel" data-slide-to="1"></li>
+                <li data-target="#productCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="/Imgo/Bitdefender_Product-Banner-04 (1).png" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Product 1</h5>
+                        <p>Description of Product 1.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/Imgo/webbanner_kaspersky-02-02 (1).jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Product 2</h5>
+                        <p>Description of Product 2.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/Imgo/webbanner_MCAffe-03-03 (1).jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Product 3</h5>
+                        <p>Description of Product 3.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
+    
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- <button class="prev">Prev</button>
     <button class="next">Next</button> -->
@@ -1606,11 +1635,11 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="single-banner nth-child-1">
-                        <a href="shop-left-sidebar-1.html"><img class="pr_img" src="/assets/images/banner/new-1.jpg"
+                        <a href="shop-left-sidebar-1.html"><img class="pr_img" src="/Imgo/mca.jpg"
                                 height="300px" width="300px" alt=""></a>
                         <span>
                             <h3 class="title">
-                                Samsung Galaxy M04 Dark Blue.</h3>
+                               McAfee Antivirus.</h3>
                             <span class="category">From ₹17,250</span>
                             <a href="/Single Product/sam-galaxy-A34.html" class="shop-link"><i class="fa fa-arrow-right"
                                     aria-hidden="true"></i></a>
@@ -1621,11 +1650,11 @@
 
                     <div class="single-banner banner-content nth-child-1">
                         <a href="/Single Product/sam-galaxy-zflip.html"><img
-                                src="/assets/images/samsung/Sam-Galaxy-Zflip3.jpg" class="pr_img" height="300px"
+                                src="/Imgo/na.jpg" class="pr_img" height="300px"
                                 width="300px" alt=""></a>
 
                         <h3 class="title">
-                            Samsung Galaxy Z flip</h3>
+                           Nortan Antivirus</h3>
                         <span class="category">From ₹98,490</span>
                         <a href="/Single Product/sam-galaxy-zflip.html" class="shop-link"><i class="fa fa-arrow-right"
                                 aria-hidden="true"></i></a>
@@ -1634,22 +1663,21 @@
                 <div class="col-md-6">
                     <div class="single-banner nth-child-2">
                         <div class="newimg"><a href="/Single Product/iphone-15-proMax.html"><img class="pr_img"
-                                    src="/assets/images/iphone/iphone-15-proMax.jpg" height="300px" width="300px"
-                                    alt=""></a></div>
+                                    src="Imgo/Ar.webp" height="300px" width="300px" alt=""></a></div>
                     </div>
                     <div class="banner-content nth-child-2">
                         <h3 class="title iphone">
-                            Apple iPhone 15 (256 GB) </h3>
+                           Avira Antivirus </h3>
                         <span class="category">From ₹89,900</span>
                         <a href="/Single Product/iphone-15.html" class="shop-link"><i class="fa fa-arrow-right"
                                 aria-hidden="true"></i></a>
                     </div>
                     <div class="single-banner nth-child-2">
                         <div class="newimg"><a href="Single Product/iphone-15.html"><img class="pr_img"
-                                    src="/assets/images/banner/new-3.jpg" height="300px" width="300px" alt=""></a></div>
+                                    src="/Imgo/malwarebytes.webp" height="300px" width="300px" alt=""></a></div>
                     </div>
                     <div class="banner-content nth-child-3">
-                        <h3 class="title">RealMe Narzo 60X</h3>
+                        <h3 class="title">MalwareByte </h3>
                         <span class="category">From ₹14,059
                         </span>
                         <a href="/Single Product/vivo-x-100.html" class="shop-link"><i class="fa fa-arrow-right"
