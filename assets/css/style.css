@@ -5210,7 +5210,7 @@ only screen and (max-width: 479px) {
     - Breadvrumb  
 =================================*/
 .breadcrumb-area {
-  background: url(/assets/images/banner/background1.avif);
+  background: url(/assets/images/banner/Cybersecurity_Blog_sq-1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11651,3 +11651,14 @@ hr {
           cursor: pointer;
           border-radius: 4px;
       }
+
+      .logo-img {
+        margin-top: 20px !important;
+
+        margin-bottom: 24px !important;
+
+        height: 94px !important;
+
+        width: auto !important;
+
+    }
